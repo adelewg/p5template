@@ -9,7 +9,10 @@ let c;
 
 function setup()
 {
-	createCanvas(800, 650);
+	//createCanvas(800, 650);
+    let cnv = createCanvas(800,600);
+    //let canvasContainer = select("#content");
+    cnv.parent("content");
     
     
     background(100);
@@ -17,6 +20,7 @@ function setup()
     
     
     colorPicker = createColorPicker('#ed225d');
+    colorPicker.parent("colorOptions");
     sel = createSelect();
     sel.option(2);
     sel.option(10);
@@ -36,6 +40,8 @@ function setup()
     
     previousMouseX = -1;
 	previousMouseY = -1;
+    
+    var colorPallete = select(".colorOptions");
     
 
 
