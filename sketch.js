@@ -4,6 +4,7 @@ var previousMouseY;
 var thickness;
 var transparency;
 let c;
+var sel;
 
 
 
@@ -20,23 +21,27 @@ function setup()
     
     
     colorPicker = createColorPicker('#ed225d');
-    colorPicker.parent("colorOptions");
+    colorPicker.parent("color");
+    //colorPicker.position(0, height + 50);
+    
     sel = createSelect();
+    sel.parent("thickness");
     sel.option(2);
     sel.option(10);
     sel.option(20);
     sel.option(40);
-    sel.position(100, height + 50);
+    //sel.position(100, height + 50);
     
     alpha = createSelect();
+    alpha.parent("alpha")
     alpha.option(255);
     alpha.option(150);
     alpha.option(100);
     alpha.option(20);
-    alpha.position(200, height + 50);
+    //alpha.position(200, height + 50);
     
     
-    colorPicker.position(0, height + 50);
+   
     
     previousMouseX = -1;
 	previousMouseY = -1;

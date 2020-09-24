@@ -1,4 +1,31 @@
+body {
+    
+}
+
+
 .boxheader {
     border: pink 2px solid;
     padding: 2px;
+}
+
+    
+#colorOptions {
+    
+}
+
+#color {
+    border: green 2px solid;
+    padding: 4px;
+    margin: 4px;
+}
+#thickness {
+    border: yellow 2px solid;
+    padding: 4px;
+    margin: 4px;
+}
+
+#alpha {
+    border: red 2px solid;
+    padding: 4px;
+    margin: 4px;
 }
