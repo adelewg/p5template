@@ -14,9 +14,10 @@ function setup()
     let cnv = createCanvas(800,600);
     //let canvasContainer = select("#content");
     cnv.parent("content");
+    helpers = new HelperFunctions();
     
     
-    background(100);
+    background(10);
     //new p5.Color;
     
     
